@@ -63,7 +63,7 @@ main p {
   height: calc(100vh - 100px);
   width: 100%;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/img/tokyo.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/tokyo.jpg);
   background-size: 100% auto;
   display: none; }
 
@@ -72,7 +72,7 @@ main p {
   height: calc(100vh - 100px);
   width: 100%;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(/img/jay-dantinne-499958-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/jay-dantinne-499958-unsplash.jpg);
   background-size: 100% auto;
   background-position: center; }
 
@@ -81,7 +81,7 @@ main p {
   height: calc(100vh - 100px);
   width: 100%;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(/img/emma-francis-135713-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/emma-francis-135713-unsplash.jpg);
   background-size: 100% auto;
   background-position: center; }
 
