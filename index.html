@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="app.js"></script>
 </head>
 <body>
     <header>
@@ -28,17 +30,17 @@
         <article id="prague">
             <h1>PRAGUE</h1>
             <p>Czech Republic</p>
-            <p class="temp">20°C Sunny</p>
-            <a onclick="showPrague()"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
-            <a onclick="showTokyo()"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
+            <p class="temp">18°C Cloudy</p>
+            <a onclick="slideControl(-1)"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
+            <a onclick="slideControl(1)"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
             <div class="container">
                 <section>
                     <p class="label">Flights per day</p>  
-                    <p class="numbers">09</p>          
+                    <p class="numbers">12</p>          
                 </section>
                 <section>
                     <p class="label">Next Flight</p>
-                    <p class="numbers">08:15</p>
+                    <p class="numbers">12:45</p>
                 </section>
                 <section>
                     <p class="label">Get your ticket<br>for the lowest price.</p>
@@ -49,13 +51,13 @@
         <article id="tokyo">
             <h1>TOKYO</h1>
             <p>Japan</p>
-            <p class="temp">20°C Sunny</p>
-            <a onclick="showPrague()"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
-            <a onclick="showTokyo()"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
+            <p class="temp">30°C Sunny</p>
+            <a onclick="slideControl(-1)"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
+            <a onclick="slideControl(1)"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
             <div class="container">
                 <section>
                     <p class="label">Flights per day</p>  
-                    <p class="numbers">09</p>          
+                    <p class="numbers">05</p>          
                 </section>
                 <section>
                     <p class="label">Next Flight</p>
@@ -68,10 +70,26 @@
             </div>
         </article>
         <article id="iceland">
-
+            <h1>JÖKULSÁRLÓN</h1>
+            <p>Iceland</p>
+            <p class="temp">-4°C Freezing</p>
+            <a onclick="slideControl(-1)"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
+            <a onclick="slideControl(1)"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
+            <div class="container">
+                <section>
+                    <p class="label">Flights per day</p>  
+                    <p class="numbers">03</p>          
+                </section>
+                <section>
+                    <p class="label">Next Flight</p>
+                    <p class="numbers">22:00</p>
+                </section>
+                <section>
+                    <p class="label">Get your ticket<br>for the lowest price.</p>
+                    <button type="submit">More Info</button>
+                </section>
+            </div>
         </article>
     </main>
-
-    <script src="app.js"></script>
 </body>
 </html>
