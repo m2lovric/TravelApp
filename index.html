@@ -26,14 +26,32 @@
     </header>
     <main>
         <article id="prague">
-
+            <h1>PRAGUE</h1>
+            <p>Czech Republic</p>
+            <p class="temp">20°C Sunny</p>
+            <a onclick="showPrague()"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
+            <a onclick="showTokyo()"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
+            <div class="container">
+                <section>
+                    <p class="label">Flights per day</p>  
+                    <p class="numbers">09</p>          
+                </section>
+                <section>
+                    <p class="label">Next Flight</p>
+                    <p class="numbers">08:15</p>
+                </section>
+                <section>
+                    <p class="label">Get your ticket<br>for the lowest price.</p>
+                    <button type="submit">More Info</button>
+                </section>
+            </div>
         </article>
         <article id="tokyo">
             <h1>TOKYO</h1>
             <p>Japan</p>
             <p class="temp">20°C Sunny</p>
-            <a href=""><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
-            <a href=""><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
+            <a onclick="showPrague()"><img src="/img/icons8-go-back-100.png" alt="left" id="img-left"></a>
+            <a onclick="showTokyo()"><img src="/img/icons8-circled-right-100.png" alt="right" id="img-right"></a>
             <div class="container">
                 <section>
                     <p class="label">Flights per day</p>  
@@ -53,5 +71,7 @@
 
         </article>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
