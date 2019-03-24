@@ -1,6 +1,7 @@
 document.querySelector('#locationFrom').addEventListener('input', event => {
     event.preventDefault();
-    let locationInput = document.querySelector("#location").value;
+    let 
+    locationInput = document.querySelector("#location").value;
     console.log(locationInput);
 
     let http = new XMLHttpRequest();
