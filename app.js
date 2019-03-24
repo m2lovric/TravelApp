@@ -6,7 +6,7 @@ function slideControl(n){
     slideShow(slideIndex += n);
 }
 
-function slideShow (n){
+function slideShow(n){
     let i;
     const slides = document.getElementsByTagName("article");
     console.log(slides);
@@ -22,37 +22,3 @@ function slideShow (n){
     slides[slideIndex-1].style.display = "block"; 
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-showPrague = () => {
-    document.querySelector("#tokyo").style.display = "none";
-    document.querySelector("#prague").style.display = "block";
-    console.log("triggered");
-}
-
-showTokyo = () => {
-    document.querySelector("#prague").style.display = "none";
-    document.querySelector("#tokyo").style.display = "block";
-    
-    console.log("triggered")
-}
