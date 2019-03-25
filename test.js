@@ -1,7 +1,8 @@
+let locationInput;
+
 document.querySelector('#locationFrom').addEventListener('input', event => {
     event.preventDefault();
-    let 
-    locationInput = document.querySelector("#location").value;
+    locationInput = document.querySelector("#locationFrom").value;
     console.log(locationInput);
 
     let http = new XMLHttpRequest();
@@ -16,5 +17,17 @@ document.querySelector('#locationFrom').addEventListener('input', event => {
     http.send();
 });
 
+let httpfl = new XMLHttpRequest();
 
+httpfl.onreadystatechange = () => {
+    if(httpfl.readyState == 4 && httpfl.status == 200){
+        let data = JSON.parse(httpfl.response);
+        console.log(data.data);
+        console.log(data.data[0].flyFrom);
+        console.log(data.data[0].flyTo);
+    }
+}
+
+httpfl.open("GET","https://api.skypicker.com/flights?flyFrom=OSI&to=DUB&dateFrom=18/05/2019&dateTo=25/05/2019&partner=picky", true);
+httpfl.send();
 
